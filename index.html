@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIF Shop</title>
+    <title>Image Store</title>
     <style>
         /* CSS styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            ackground-color: blue;
+            background-color: blue;
         }
         header {
             background-color: #333;
@@ -23,13 +23,13 @@
             margin: 0 auto;
             padding: 20px;
         }
-        .gif-item {
+        .image-item {
             display: inline-block;
             width: 10%;
             padding: 10px;
             text-align: center;
         }
-        .gif-item img {
+        .image-item img {
             width: 100%;
             max-height: 200px;
         }
@@ -62,63 +62,66 @@
 </head>
 <body>
     <header>
-        <h1>GIF Shop</h1>
+        <h1>Image Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#pcback">PC Backgrounds</a></li>
+                <li><a href="#inner">Inner</a></li>
+                <li><a href="#outer">Outer</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="container">
-        <div class="gif-item">
-            <img src="gif1.gif" alt="GIF 1">
-            <h3>GIF 1</h3>
-            <p>Price: $10.00</p>
-            <button onclick="addToCart('GIF 1', 10)">Add to Cart</button>
-        </div>
-        <div class="gif-item">
-            <img src="gif2.gif" alt="GIF 2">
-            <h3>GIF 2</h3>
-            <p>Price: $15.00</p>
-            <button onclick="addToCart('GIF 2', 15)">Add to Cart</button>
-        </div>
-        <div class="gif-item">
-            <img src="gif1.gif" alt="GIF 1">
-            <h3>GIF 1</h3>
-            <p>Price: $10.00</p>
-            <button onclick="addToCart('GIF 1', 10)">Add to Cart</button>
-        </div><div class="gif-item">
-            <img src="gif1.gif" alt="GIF 1">
-            <h3>GIF 1</h3>
-            <p>Price: $10.00</p>
-            <button onclick="addToCart('GIF 1', 10)">Add to Cart</button>
-        </div><div class="gif-item">
-            <img src="gif1.gif" alt="GIF 1">
-            <h3>GIF 1</h3>
-            <p>Price: $10.00</p>
-            <button onclick="addToCart('GIF 1', 10)">Add to Cart</button>
-        </div><div class="gif-item">
-            <img src="gif1.gif" alt="GIF 1">
-            <h3>GIF 1</h3>
-            <p>Price: $10.00</p>
-            <button onclick="addToCart('GIF 1', 10)">Add to Cart</button>
-        </div><div class="gif-item">
-            <img src="gif1.gif" alt="GIF 1">
-            <h3>GIF 1</h3>
-            <p>Price: $10.00</p>
-            <button onclick="addToCart('GIF 1', 10)">Add to Cart</button>
-        </div><div class="gif-item">
-            <img src="gif1.gif" alt="GIF 1">
-            <h3>GIF 1</h3>
-            <p>Price: $10.00</p>
-            <button onclick="addToCart('GIF 1', 10)">Add to Cart</button>
-        </div><div class="gif-item">
-            <img src="gif1.gif" alt="GIF 1">
-            <h3>GIF 1</h3>
-            <p>Price: $10.00</p>
-            <button onclick="addToCart('GIF 1', 10)">Add to Cart</button>
-        </div><div class="gif-item">
-            <img src="gif1.gif" alt="GIF 1">
-            <h3>GIF 1</h3>
-            <p>Price: $10.00</p>
-            <button onclick="addToCart('GIF 1', 10)">Add to Cart</button>
-        </div>
-        <!-- Add more GIF items here -->
+        <section id="pcback">
+            <h2>PC Backgrounds</h2>
+            <div class="image-item">
+                <img src="image1.jpg" alt="Image 1">
+                <h3>Image 1</h3>
+                <p>Price: $10.00</p>
+                <button onclick="addToCart('Image 1', 10)">Add to Cart</button>
+            </div>
+            <div class="image-item">
+                <img src="image2.jpg" alt="Image 2">
+                <h3>Image 2</h3>
+                <p>Price: $15.00</p>
+                <button onclick="addToCart('Image 2', 15)">Add to Cart</button>
+            </div>
+            <!-- Add more PC backgrounds here -->
+        </section>
+
+        <section id="inner">
+            <h2>Inner</h2>
+            <div class="image-item">
+                <img src="image3.jpg" alt="Image 3">
+                <h3>Image 3</h3>
+                <p>Price: $12.00</p>
+                <button onclick="addToCart('Image 3', 12)">Add to Cart</button>
+            </div>
+            <div class="image-item">
+                <img src="image4.jpg" alt="Image 4">
+                <h3>Image 4</h3>
+                <p>Price: $8.00</p>
+                <button onclick="addToCart('Image 4', 8)">Add to Cart</button>
+            </div>
+            <!-- Add more Inner images here -->
+        </section>
+
+        <section id="outer">
+            <h2>Outer</h2>
+            <div class="image-item">
+                <img src="image5.jpg" alt="Image 5">
+                <h3>Image 5</h3>
+                <p>Price: $20.00</p>
+                <button onclick="addToCart('Image 5', 20)">Add to Cart</button>
+            </div>
+            <div class="image-item">
+                <img src="image6.jpg" alt="Image 6">
+                <h3>Image 6</h3>
+                <p>Price: $18.00</p>
+                <button onclick="addToCart('Image 6', 18)">Add to Cart</button>
+            </div>
+            <!-- Add more Outer images here -->
+        </section>
 
         <div class="cart">
             <h2>Shopping Cart</h2>
